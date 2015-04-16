@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GtBasicControls">
+      <UniqueIdentifier>{22eadd70-0f8c-4d91-a17b-04fec5c9e452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtGridView">
+      <UniqueIdentifier>{3eae766d-efeb-4010-928f-889815d99468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtModelView">
+      <UniqueIdentifier>{936f9443-ee9e-4529-98e1-644181da207e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtScientific">
+      <UniqueIdentifier>{a2c632a8-4f3f-4515-a4d2-5a24d9e2cb90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtTextView">
+      <UniqueIdentifier>{115a27f8-b93c-4dfb-824d-075acc571513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtWinForms">
+      <UniqueIdentifier>{9413850f-6a2d-40dd-892c-54787af2f5e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtBasicControls">
+      <UniqueIdentifier>{f4fe0d74-84dc-4e38-97c3-b3b16feb631e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtGridView">
+      <UniqueIdentifier>{7ca1938e-52b0-45f8-a060-5bd7d84df2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtModelView">
+      <UniqueIdentifier>{34d6af67-0fd8-43ad-9d56-ce86a5e25ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtScientific">
+      <UniqueIdentifier>{8676f876-b03b-4361-9fad-57ba6e68f344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtTextView">
+      <UniqueIdentifier>{564a5b87-4a36-4abe-a7a7-a0baf740d512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtWinForms">
+      <UniqueIdentifier>{ec8862ae-663b-481a-b4bc-9bace00be58c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GtGuiLibRefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtAction.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtButton.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtCheckBox.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtComboBox.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtControlEnums.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtDateEdit.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtFrame.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtHorizScrollBar.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtLabel.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtMenu.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtProgressBar.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtRadioButton.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtScrollArea.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtSlider.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtSpinBox.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtStatusBar.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtTabBar.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtTabPage.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtTimeEdit.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtToolBar.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtToolBox.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBasicControls\GtVertScrollBar.h">
+      <Filter>Header Files\GtBasicControls</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGridView\GtGridCell.h">
+      <Filter>Header Files\GtGridView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGridView\GtGridColumn.h">
+      <Filter>Header Files\GtGridView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGridView\GtGridRow.h">
+      <Filter>Header Files\GtGridView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGridView\GtGridSelection.h">
+      <Filter>Header Files\GtGridView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGridView\GtGridView.h">
+      <Filter>Header Files\GtGridView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtModelView\GtListView.h">
+      <Filter>Header Files\GtModelView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtModelView\GtTableColumn.h">
+      <Filter>Header Files\GtModelView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtModelView\GtTableRow.h">
+      <Filter>Header Files\GtModelView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtModelView\GtTableView.h">
+      <Filter>Header Files\GtModelView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtModelView\GtTreeView.h">
+      <Filter>Header Files\GtModelView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtTextView\GtDocumentEdit.h">
+      <Filter>Header Files\GtTextView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtTextView\GtHorizRuler.h">
+      <Filter>Header Files\GtTextView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtTextView\GtMultiTextEdit.h">
+      <Filter>Header Files\GtTextView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtTextView\GtSimpleTextEdit.h">
+      <Filter>Header Files\GtTextView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtTextView\GtTextDocument.h">
+      <Filter>Header Files\GtTextView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtTextView\GtVertRuler.h">
+      <Filter>Header Files\GtTextView</Filter>
+    </ClInclude>
+    <ClInclude Include="GtWinForms\GtColorDialog.h">
+      <Filter>Header Files\GtWinForms</Filter>
+    </ClInclude>
+    <ClInclude Include="GtWinForms\GtDialog.h">
+      <Filter>Header Files\GtWinForms</Filter>
+    </ClInclude>
+    <ClInclude Include="GtWinForms\GtFileOpenDialog.h">
+      <Filter>Header Files\GtWinForms</Filter>
+    </ClInclude>
+    <ClInclude Include="GtWinForms\GtFileSaveDialog.h">
+      <Filter>Header Files\GtWinForms</Filter>
+    </ClInclude>
+    <ClInclude Include="GtWinForms\GtMainWindow.h">
+      <Filter>Header Files\GtWinForms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GtBasicControls\GtAction.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtButton.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtCheckBox.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtComboBox.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtControlEnums.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtDateEdit.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtFrame.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtHorizScrollBar.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtLabel.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtMenu.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtProgressBar.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtRadioButton.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtScrollArea.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtSlider.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtSpinBox.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtStatusBar.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtTabBar.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtTabPage.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtTimeEdit.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtToolBar.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtToolBox.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBasicControls\GtVertScrollBar.cpp">
+      <Filter>Source Files\GtBasicControls</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGridView\GtGridCell.cpp">
+      <Filter>Source Files\GtGridView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGridView\GtGridColumn.cpp">
+      <Filter>Source Files\GtGridView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGridView\GtGridRow.cpp">
+      <Filter>Source Files\GtGridView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGridView\GtGridSelection.cpp">
+      <Filter>Source Files\GtGridView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGridView\GtGridView.cpp">
+      <Filter>Source Files\GtGridView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtModelView\GtListView.cpp">
+      <Filter>Source Files\GtModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtModelView\GtTableColumn.cpp">
+      <Filter>Source Files\GtModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtModelView\GtTableRow.cpp">
+      <Filter>Source Files\GtModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtModelView\GtTableView.cpp">
+      <Filter>Source Files\GtModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtModelView\GtTreeView.cpp">
+      <Filter>Source Files\GtModelView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtTextView\GtDocumentEdit.cpp">
+      <Filter>Source Files\GtTextView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtTextView\GtHorizRuler.cpp">
+      <Filter>Source Files\GtTextView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtTextView\GtMultiTextEdit.cpp">
+      <Filter>Source Files\GtTextView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtTextView\GtSimpleTextEdit.cpp">
+      <Filter>Source Files\GtTextView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtTextView\GtTextDocument.cpp">
+      <Filter>Source Files\GtTextView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtTextView\GtVertRuler.cpp">
+      <Filter>Source Files\GtTextView</Filter>
+    </ClCompile>
+    <ClCompile Include="GtWinForms\GtColorDialog.cpp">
+      <Filter>Source Files\GtWinForms</Filter>
+    </ClCompile>
+    <ClCompile Include="GtWinForms\GtDialog.cpp">
+      <Filter>Source Files\GtWinForms</Filter>
+    </ClCompile>
+    <ClCompile Include="GtWinForms\GtFileOpenDialog.cpp">
+      <Filter>Source Files\GtWinForms</Filter>
+    </ClCompile>
+    <ClCompile Include="GtWinForms\GtFileSaveDialog.cpp">
+      <Filter>Source Files\GtWinForms</Filter>
+    </ClCompile>
+    <ClCompile Include="GtWinForms\GtMainWindow.cpp">
+      <Filter>Source Files\GtWinForms</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFCCDAFD-74CD-453A-A6E1-96E40241E142}</ProjectGuid>
+    <RootNamespace>GtGui</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)V10Debug</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)V10Release</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\HTL;..\GtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>HTLV10Debug.lib;GtCoreV10Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\HTL;..\GtCore</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>HTLV10Release.lib;GtCoreV10Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GtBasicControls\GtAction.h" />
+    <ClInclude Include="GtBasicControls\GtButton.h" />
+    <ClInclude Include="GtBasicControls\GtCheckBox.h" />
+    <ClInclude Include="GtBasicControls\GtComboBox.h" />
+    <ClInclude Include="GtBasicControls\GtControlEnums.h" />
+    <ClInclude Include="GtBasicControls\GtDateEdit.h" />
+    <ClInclude Include="GtBasicControls\GtFrame.h" />
+    <ClInclude Include="GtBasicControls\GtHorizScrollBar.h" />
+    <ClInclude Include="GtBasicControls\GtLabel.h" />
+    <ClInclude Include="GtBasicControls\GtMenu.h" />
+    <ClInclude Include="GtBasicControls\GtProgressBar.h" />
+    <ClInclude Include="GtBasicControls\GtRadioButton.h" />
+    <ClInclude Include="GtBasicControls\GtScrollArea.h" />
+    <ClInclude Include="GtBasicControls\GtSlider.h" />
+    <ClInclude Include="GtBasicControls\GtSpinBox.h" />
+    <ClInclude Include="GtBasicControls\GtStatusBar.h" />
+    <ClInclude Include="GtBasicControls\GtTabBar.h" />
+    <ClInclude Include="GtBasicControls\GtTabPage.h" />
+    <ClInclude Include="GtBasicControls\GtTimeEdit.h" />
+    <ClInclude Include="GtBasicControls\GtToolBar.h" />
+    <ClInclude Include="GtBasicControls\GtToolBox.h" />
+    <ClInclude Include="GtBasicControls\GtVertScrollBar.h" />
+    <ClInclude Include="GtGridView\GtGridCell.h" />
+    <ClInclude Include="GtGridView\GtGridColumn.h" />
+    <ClInclude Include="GtGridView\GtGridRow.h" />
+    <ClInclude Include="GtGridView\GtGridSelection.h" />
+    <ClInclude Include="GtGridView\GtGridView.h" />
+    <ClInclude Include="GtGuiLibRefs.h" />
+    <ClInclude Include="GtModelView\GtListView.h" />
+    <ClInclude Include="GtModelView\GtTableColumn.h" />
+    <ClInclude Include="GtModelView\GtTableRow.h" />
+    <ClInclude Include="GtModelView\GtTableView.h" />
+    <ClInclude Include="GtModelView\GtTreeView.h" />
+    <ClInclude Include="GtTextView\GtDocumentEdit.h" />
+    <ClInclude Include="GtTextView\GtHorizRuler.h" />
+    <ClInclude Include="GtTextView\GtMultiTextEdit.h" />
+    <ClInclude Include="GtTextView\GtSimpleTextEdit.h" />
+    <ClInclude Include="GtTextView\GtTextDocument.h" />
+    <ClInclude Include="GtTextView\GtVertRuler.h" />
+    <ClInclude Include="GtWinForms\GtColorDialog.h" />
+    <ClInclude Include="GtWinForms\GtDialog.h" />
+    <ClInclude Include="GtWinForms\GtFileOpenDialog.h" />
+    <ClInclude Include="GtWinForms\GtFileSaveDialog.h" />
+    <ClInclude Include="GtWinForms\GtMainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GtBasicControls\GtAction.cpp" />
+    <ClCompile Include="GtBasicControls\GtButton.cpp" />
+    <ClCompile Include="GtBasicControls\GtCheckBox.cpp" />
+    <ClCompile Include="GtBasicControls\GtComboBox.cpp" />
+    <ClCompile Include="GtBasicControls\GtControlEnums.cpp" />
+    <ClCompile Include="GtBasicControls\GtDateEdit.cpp" />
+    <ClCompile Include="GtBasicControls\GtFrame.cpp" />
+    <ClCompile Include="GtBasicControls\GtHorizScrollBar.cpp" />
+    <ClCompile Include="GtBasicControls\GtLabel.cpp" />
+    <ClCompile Include="GtBasicControls\GtMenu.cpp" />
+    <ClCompile Include="GtBasicControls\GtProgressBar.cpp" />
+    <ClCompile Include="GtBasicControls\GtRadioButton.cpp" />
+    <ClCompile Include="GtBasicControls\GtScrollArea.cpp" />
+    <ClCompile Include="GtBasicControls\GtSlider.cpp" />
+    <ClCompile Include="GtBasicControls\GtSpinBox.cpp" />
+    <ClCompile Include="GtBasicControls\GtStatusBar.cpp" />
+    <ClCompile Include="GtBasicControls\GtTabBar.cpp" />
+    <ClCompile Include="GtBasicControls\GtTabPage.cpp" />
+    <ClCompile Include="GtBasicControls\GtTimeEdit.cpp" />
+    <ClCompile Include="GtBasicControls\GtToolBar.cpp" />
+    <ClCompile Include="GtBasicControls\GtToolBox.cpp" />
+    <ClCompile Include="GtBasicControls\GtVertScrollBar.cpp" />
+    <ClCompile Include="GtGridView\GtGridCell.cpp" />
+    <ClCompile Include="GtGridView\GtGridColumn.cpp" />
+    <ClCompile Include="GtGridView\GtGridRow.cpp" />
+    <ClCompile Include="GtGridView\GtGridSelection.cpp" />
+    <ClCompile Include="GtGridView\GtGridView.cpp" />
+    <ClCompile Include="GtModelView\GtListView.cpp" />
+    <ClCompile Include="GtModelView\GtTableColumn.cpp" />
+    <ClCompile Include="GtModelView\GtTableRow.cpp" />
+    <ClCompile Include="GtModelView\GtTableView.cpp" />
+    <ClCompile Include="GtModelView\GtTreeView.cpp" />
+    <ClCompile Include="GtTextView\GtDocumentEdit.cpp" />
+    <ClCompile Include="GtTextView\GtHorizRuler.cpp" />
+    <ClCompile Include="GtTextView\GtMultiTextEdit.cpp" />
+    <ClCompile Include="GtTextView\GtSimpleTextEdit.cpp" />
+    <ClCompile Include="GtTextView\GtTextDocument.cpp" />
+    <ClCompile Include="GtTextView\GtVertRuler.cpp" />
+    <ClCompile Include="GtWinForms\GtColorDialog.cpp" />
+    <ClCompile Include="GtWinForms\GtDialog.cpp" />
+    <ClCompile Include="GtWinForms\GtFileOpenDialog.cpp" />
+    <ClCompile Include="GtWinForms\GtFileSaveDialog.cpp" />
+    <ClCompile Include="GtWinForms\GtMainWindow.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

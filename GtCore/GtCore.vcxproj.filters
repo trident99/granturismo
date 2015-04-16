@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GtBase">
+      <UniqueIdentifier>{27e7a26e-7208-47e6-8e87-38ba460e6e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtEvent">
+      <UniqueIdentifier>{d3883258-f020-420d-aad2-3852fe6459f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtGeometry">
+      <UniqueIdentifier>{9b8cae34-cb49-471d-91ec-59260e1d9171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtGraphic">
+      <UniqueIdentifier>{5521034d-887a-43a7-843e-86b5ce4e3927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtInputOutput">
+      <UniqueIdentifier>{e6cd55ae-4b35-49f0-9ba3-211aabf68585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtItemModel">
+      <UniqueIdentifier>{50688045-ac05-4683-9ab4-d9828ef53291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtMath">
+      <UniqueIdentifier>{3584a2f0-27f7-4fcc-b6a5-621281a3078d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtProcess">
+      <UniqueIdentifier>{ed971c2c-9254-4003-9c8c-18f4513fdd17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtSorting">
+      <UniqueIdentifier>{94054245-3c70-4a33-bbf2-2bb55d1ac36d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtStateMachine">
+      <UniqueIdentifier>{a3e472fc-107f-4d40-aef5-c9599bd5f90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtBase">
+      <UniqueIdentifier>{cac01038-21ed-431e-990a-659cda98afa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtEvent">
+      <UniqueIdentifier>{01498854-c1d5-4138-93e1-797d9accb498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtGeometry">
+      <UniqueIdentifier>{7cad73b1-bb7d-4fa4-afee-1495a20456a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtGraphic">
+      <UniqueIdentifier>{4894f216-5c20-4619-bb99-f661c014581b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtInputOutput">
+      <UniqueIdentifier>{af5b18d8-6f7c-4e23-91fe-445b37b4d84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtItemModel">
+      <UniqueIdentifier>{36f62abe-25e4-460d-9894-1cf91b4c3f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtMath">
+      <UniqueIdentifier>{3a3ba8a2-3ff6-4785-a097-9a25af93da05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtProcess">
+      <UniqueIdentifier>{ef578cfe-5649-431b-8910-45689da0ea27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtSorting">
+      <UniqueIdentifier>{b20042e3-fb8b-411a-bb28-f0d4ebb8268a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtStateMachine">
+      <UniqueIdentifier>{32884bae-68c6-4560-9107-a498f26858d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GtBase\GtByteArray.h">
+      <Filter>Header Files\GtBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBase\GtException.h">
+      <Filter>Header Files\GtBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBase\GtObject.h">
+      <Filter>Header Files\GtBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GtBase\GtVariant.h">
+      <Filter>Header Files\GtBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GtEvent\GtEvent.h">
+      <Filter>Header Files\GtEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="GtEvent\GtEventCreator.h">
+      <Filter>Header Files\GtEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="GtEvent\GtEventEnums.h">
+      <Filter>Header Files\GtEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="GtEvent\GtEventManager.h">
+      <Filter>Header Files\GtEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtAABox.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtLineF.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtLineI.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtPlane.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtPoint3DF.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtPoint3DI.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtPolylineF.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtPolylineI.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtRectF.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtRectI.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtSizeF.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGeometry\GtSizeI.h">
+      <Filter>Header Files\GtGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtBrush.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtColor.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtFont.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtGraphicEnums.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtGraphicStructs.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtMaterial.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtPainter.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtPainterGDI.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtPen.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtPixmap.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GtGraphic\GtWidget.h">
+      <Filter>Header Files\GtGraphic</Filter>
+    </ClInclude>
+    <ClInclude Include="GTCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtCoreEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtCoreLibRefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtLicense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtGraphic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtInputOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtItemModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modGtStateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtInputOutput\GtDir.h">
+      <Filter>Header Files\GtInputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="GtInputOutput\GtFile.h">
+      <Filter>Header Files\GtInputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="GtInputOutput\GtUrl.h">
+      <Filter>Header Files\GtInputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtIndexSorting.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtItemEnums.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtListItemModel.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtListModelIndex.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtListSelection.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtTableItemModel.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtTableModelIndex.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtTableSelection.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtTreeItemModel.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtTreeModelIndex.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtItemModel\GtTreeSelection.h">
+      <Filter>Header Files\GtItemModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtMath\GtBasicMath.h">
+      <Filter>Header Files\GtMath</Filter>
+    </ClInclude>
+    <ClInclude Include="GtMath\GtGeometryMath.h">
+      <Filter>Header Files\GtMath</Filter>
+    </ClInclude>
+    <ClInclude Include="GtMath\GtVectorMath.h">
+      <Filter>Header Files\GtMath</Filter>
+    </ClInclude>
+    <ClInclude Include="GtProcess\GtApplication.h">
+      <Filter>Header Files\GtProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="GtProcess\GtAppSettings.h">
+      <Filter>Header Files\GtProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="GtSorting\GtBubbleSort.h">
+      <Filter>Header Files\GtSorting</Filter>
+    </ClInclude>
+    <ClInclude Include="GtSorting\GtQuickSort.h">
+      <Filter>Header Files\GtSorting</Filter>
+    </ClInclude>
+    <ClInclude Include="GtStateMachine\GtState.h">
+      <Filter>Header Files\GtStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="GtStateMachine\GtStateHistory.h">
+      <Filter>Header Files\GtStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="GtStateMachine\GtStateMachine.h">
+      <Filter>Header Files\GtStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="GtStateMachine\GtStateTransition.h">
+      <Filter>Header Files\GtStateMachine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GtBase\GtByteArray.cpp">
+      <Filter>Source Files\GtBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBase\GtException.cpp">
+      <Filter>Source Files\GtBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBase\GtObject.cpp">
+      <Filter>Source Files\GtBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GtBase\GtVariant.cpp">
+      <Filter>Source Files\GtBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GtEvent\GtEvent.cpp">
+      <Filter>Source Files\GtEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="GtEvent\GtEventCreator.cpp">
+      <Filter>Source Files\GtEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="GtEvent\GtEventEnums.cpp">
+      <Filter>Source Files\GtEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="GtEvent\GtEventManager.cpp">
+      <Filter>Source Files\GtEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtAABox.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtLineF.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtLineI.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtPlane.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtPoint3DF.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtPoint3DI.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtPolylineF.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtPolylineI.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtRectF.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtRectI.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtSizeF.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGeometry\GtSizeI.cpp">
+      <Filter>Source Files\GtGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtBrush.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtColor.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtFont.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtGraphicEnums.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtGraphicStructs.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtMaterial.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtPainter.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtPainterGDI.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtPen.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtPixmap.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtGraphic\GtWidget.cpp">
+      <Filter>Source Files\GtGraphic</Filter>
+    </ClCompile>
+    <ClCompile Include="GtInputOutput\GtDir.cpp">
+      <Filter>Source Files\GtInputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="GtInputOutput\GtFile.cpp">
+      <Filter>Source Files\GtInputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="GtInputOutput\GtUrl.cpp">
+      <Filter>Source Files\GtInputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtIndexSorting.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtItemEnums.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtListItemModel.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtListModelIndex.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtListSelection.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtTableItemModel.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtTableModelIndex.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtTableSelection.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtTreeItemModel.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtTreeModelIndex.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtItemModel\GtTreeSelection.cpp">
+      <Filter>Source Files\GtItemModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtMath\GtBasicMath.cpp">
+      <Filter>Source Files\GtMath</Filter>
+    </ClCompile>
+    <ClCompile Include="GtMath\GtGeometryMath.cpp">
+      <Filter>Source Files\GtMath</Filter>
+    </ClCompile>
+    <ClCompile Include="GtMath\GtVectorMath.cpp">
+      <Filter>Source Files\GtMath</Filter>
+    </ClCompile>
+    <ClCompile Include="GtProcess\GtApplication.cpp">
+      <Filter>Source Files\GtProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="GtProcess\GtAppSettings.cpp">
+      <Filter>Source Files\GtProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="GtSorting\GtBubbleSort.cpp">
+      <Filter>Source Files\GtSorting</Filter>
+    </ClCompile>
+    <ClCompile Include="GtSorting\GtQuickSort.cpp">
+      <Filter>Source Files\GtSorting</Filter>
+    </ClCompile>
+    <ClCompile Include="GtStateMachine\GtState.cpp">
+      <Filter>Source Files\GtStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="GtStateMachine\GtStateHistory.cpp">
+      <Filter>Source Files\GtStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="GtStateMachine\GtStateMachine.cpp">
+      <Filter>Source Files\GtStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="GtStateMachine\GtStateTransition.cpp">
+      <Filter>Source Files\GtStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="GTCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtCoreEnums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtCoreLibRefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

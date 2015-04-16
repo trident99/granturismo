@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GtOpenGLModel">
+      <UniqueIdentifier>{266befe4-1f2e-4dc8-93ab-0c6df296baa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtOpenGLViewer">
+      <UniqueIdentifier>{579c9cb7-62b3-4c8d-91a3-cb92fbaa4889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtOpenGLModel\GtModelObjects">
+      <UniqueIdentifier>{7907bccc-82cf-4df0-97eb-5f1d221306da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtOpenGLModel">
+      <UniqueIdentifier>{8fb9dad7-e983-4be1-bc4c-739c5e55e412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtOpenGLModel\GtModelObjects">
+      <UniqueIdentifier>{d5f1fefa-ee09-4df9-b147-1e40fb321527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtOpenGLViewer">
+      <UniqueIdentifier>{25a0306b-9b89-4df9-a019-3e8a8312fac0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_AABox.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_Curve.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_Grid.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_Mesh.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_Point3D.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_Polyline.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtModelObjects\GM_Vector.h">
+      <Filter>Header Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtCadLayer.h">
+      <Filter>Header Files\GtOpenGLModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtCadObject.h">
+      <Filter>Header Files\GtOpenGLModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtLight.h">
+      <Filter>Header Files\GtOpenGLModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLModel\GtPartModel.h">
+      <Filter>Header Files\GtOpenGLModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLViewer\GtSelItemMenu.h">
+      <Filter>Header Files\GtOpenGLViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLViewer\GtViewport.h">
+      <Filter>Header Files\GtOpenGLViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLViewer\GtViewportMenu.h">
+      <Filter>Header Files\GtOpenGLViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="GLView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLLibRefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtOpenGLViewer\GtFloatingDialog.h">
+      <Filter>Header Files\GtOpenGLViewer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_AABox.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_Curve.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_Grid.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_Mesh.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_Point3D.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_Polyline.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtModelObjects\GM_Vector.cpp">
+      <Filter>Source Files\GtOpenGLModel\GtModelObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtCadLayer.cpp">
+      <Filter>Source Files\GtOpenGLModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtCadObject.cpp">
+      <Filter>Source Files\GtOpenGLModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtLight.cpp">
+      <Filter>Source Files\GtOpenGLModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLModel\GtPartModel.cpp">
+      <Filter>Source Files\GtOpenGLModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLViewer\GtFloatingDialog.cpp">
+      <Filter>Source Files\GtOpenGLViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLViewer\GtSelItemMenu.cpp">
+      <Filter>Source Files\GtOpenGLViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLViewer\GtViewport.cpp">
+      <Filter>Source Files\GtOpenGLViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLViewer\GtViewportMenu.cpp">
+      <Filter>Source Files\GtOpenGLViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="GLView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLEnums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLStructs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtOpenGLWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

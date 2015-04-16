@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GtPlot2D">
+      <UniqueIdentifier>{4f89c4d1-406b-4a8a-a47a-fabb1ad4ed54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtPlot3D">
+      <UniqueIdentifier>{6b895a0c-d2c0-44ed-be52-53413bc29a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtPlotAxisScale">
+      <UniqueIdentifier>{cb0f9b87-3ebc-4ac6-b8db-cebf717c97fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtPlotGantt">
+      <UniqueIdentifier>{d8c6d241-ecc1-47f3-b9a6-c7a3fdfeaaf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GtPlotModel">
+      <UniqueIdentifier>{ab846271-7a06-493c-a920-a5ec7da15b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtPlot2D">
+      <UniqueIdentifier>{f3039400-128c-4e56-ab58-71d32b293bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtPlot3D">
+      <UniqueIdentifier>{38edca2f-593a-4445-916d-f6c827dc3bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtPlotAxisScale">
+      <UniqueIdentifier>{2e57dfb5-2545-4821-9728-7cb22c7df73e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtPlotGantt">
+      <UniqueIdentifier>{376ce7f5-53d3-4b62-94aa-8da44ad77125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GtPlotModel">
+      <UniqueIdentifier>{43cd0ec2-2bc0-4268-882e-d0f8ca038416}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GTChart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtChartLibRefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DBar.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DBase.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DColumn.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DCurve.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DGeneric.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DLegend.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DPieChart.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlot2D\GtPlot2DScatter.h">
+      <Filter>Header Files\GtPlot2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotAxisScale\GtAxisHorizontal.h">
+      <Filter>Header Files\GtPlotAxisScale</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotAxisScale\GtAxisVertical.h">
+      <Filter>Header Files\GtPlotAxisScale</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotAxisScale\GtScaleBase.h">
+      <Filter>Header Files\GtPlotAxisScale</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotAxisScale\GtScaleDate.h">
+      <Filter>Header Files\GtPlotAxisScale</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotAxisScale\GtScaleLogarithm.h">
+      <Filter>Header Files\GtPlotAxisScale</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotAxisScale\GtScalePower.h">
+      <Filter>Header Files\GtPlotAxisScale</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtColorMap.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotBar.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotCanvas.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotColumn.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotCurve.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotItem.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotPie.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotPointSet.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotSelection.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GtPlotModel\GtPlotSymbol.h">
+      <Filter>Header Files\GtPlotModel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GTChart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DBar.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DBase.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DColumn.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DCurve.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DGeneric.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DLegend.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DPieChart.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlot2D\GtPlot2DScatter.cpp">
+      <Filter>Source Files\GtPlot2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotAxisScale\GtAxisHorizontal.cpp">
+      <Filter>Source Files\GtPlotAxisScale</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotAxisScale\GtAxisVertical.cpp">
+      <Filter>Source Files\GtPlotAxisScale</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotAxisScale\GtScaleBase.cpp">
+      <Filter>Source Files\GtPlotAxisScale</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotAxisScale\GtScaleDate.cpp">
+      <Filter>Source Files\GtPlotAxisScale</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotAxisScale\GtScaleLogarithm.cpp">
+      <Filter>Source Files\GtPlotAxisScale</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotAxisScale\GtScalePower.cpp">
+      <Filter>Source Files\GtPlotAxisScale</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtColorMap.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotBar.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotCanvas.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotColumn.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotCurve.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotItem.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotPie.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotPointSet.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotSelection.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GtPlotModel\GtPlotSymbol.cpp">
+      <Filter>Source Files\GtPlotModel</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

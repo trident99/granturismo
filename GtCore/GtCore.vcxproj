@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64D0ABF0-8EB1-41FA-ABD7-F5109E8A1066}</ProjectGuid>
+    <RootNamespace>GtCore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)V10Debug</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)V10Release</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\HTL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>HTLV10Debug.lib;Gdi32.lib;GdiPlus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\HTL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>HTLV10Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GtBase\GtByteArray.h" />
+    <ClInclude Include="GtBase\GtException.h" />
+    <ClInclude Include="GtBase\GtObject.h" />
+    <ClInclude Include="GtBase\GtVariant.h" />
+    <ClInclude Include="GTCore.h" />
+    <ClInclude Include="GtCoreEnums.h" />
+    <ClInclude Include="GtCoreLibRefs.h" />
+    <ClInclude Include="GtEvent\GtEvent.h" />
+    <ClInclude Include="GtEvent\GtEventCreator.h" />
+    <ClInclude Include="GtEvent\GtEventEnums.h" />
+    <ClInclude Include="GtEvent\GtEventManager.h" />
+    <ClInclude Include="GtGeometry\GtAABox.h" />
+    <ClInclude Include="GtGeometry\GtLineF.h" />
+    <ClInclude Include="GtGeometry\GtLineI.h" />
+    <ClInclude Include="GtGeometry\GtPlane.h" />
+    <ClInclude Include="GtGeometry\GtPoint3DF.h" />
+    <ClInclude Include="GtGeometry\GtPoint3DI.h" />
+    <ClInclude Include="GtGeometry\GtPolylineF.h" />
+    <ClInclude Include="GtGeometry\GtPolylineI.h" />
+    <ClInclude Include="GtGeometry\GtRectF.h" />
+    <ClInclude Include="GtGeometry\GtRectI.h" />
+    <ClInclude Include="GtGeometry\GtSizeF.h" />
+    <ClInclude Include="GtGeometry\GtSizeI.h" />
+    <ClInclude Include="GtGraphic\GtBrush.h" />
+    <ClInclude Include="GtGraphic\GtColor.h" />
+    <ClInclude Include="GtGraphic\GtFont.h" />
+    <ClInclude Include="GtGraphic\GtGraphicEnums.h" />
+    <ClInclude Include="GtGraphic\GtGraphicStructs.h" />
+    <ClInclude Include="GtGraphic\GtMaterial.h" />
+    <ClInclude Include="GtGraphic\GtPainter.h" />
+    <ClInclude Include="GtGraphic\GtPainterGDI.h" />
+    <ClInclude Include="GtGraphic\GtPen.h" />
+    <ClInclude Include="GtGraphic\GtPixmap.h" />
+    <ClInclude Include="GtGraphic\GtWidget.h" />
+    <ClInclude Include="GtInputOutput\GtDir.h" />
+    <ClInclude Include="GtInputOutput\GtFile.h" />
+    <ClInclude Include="GtInputOutput\GtUrl.h" />
+    <ClInclude Include="GtItemModel\GtIndexSorting.h" />
+    <ClInclude Include="GtItemModel\GtItemEnums.h" />
+    <ClInclude Include="GtItemModel\GtListItemModel.h" />
+    <ClInclude Include="GtItemModel\GtListModelIndex.h" />
+    <ClInclude Include="GtItemModel\GtListSelection.h" />
+    <ClInclude Include="GtItemModel\GtTableItemModel.h" />
+    <ClInclude Include="GtItemModel\GtTableModelIndex.h" />
+    <ClInclude Include="GtItemModel\GtTableSelection.h" />
+    <ClInclude Include="GtItemModel\GtTreeItemModel.h" />
+    <ClInclude Include="GtItemModel\GtTreeModelIndex.h" />
+    <ClInclude Include="GtItemModel\GtTreeSelection.h" />
+    <ClInclude Include="GtLicense.h" />
+    <ClInclude Include="GtMath\GtBasicMath.h" />
+    <ClInclude Include="GtMath\GtGeometryMath.h" />
+    <ClInclude Include="GtMath\GtVectorMath.h" />
+    <ClInclude Include="GtProcess\GtApplication.h" />
+    <ClInclude Include="GtProcess\GtAppSettings.h" />
+    <ClInclude Include="GtSorting\GtBubbleSort.h" />
+    <ClInclude Include="GtSorting\GtQuickSort.h" />
+    <ClInclude Include="GtStateMachine\GtState.h" />
+    <ClInclude Include="GtStateMachine\GtStateHistory.h" />
+    <ClInclude Include="GtStateMachine\GtStateMachine.h" />
+    <ClInclude Include="GtStateMachine\GtStateTransition.h" />
+    <ClInclude Include="modGtBase.h" />
+    <ClInclude Include="modGtEvent.h" />
+    <ClInclude Include="modGtGeometry.h" />
+    <ClInclude Include="modGtGraphic.h" />
+    <ClInclude Include="modGtInputOutput.h" />
+    <ClInclude Include="modGtItemModel.h" />
+    <ClInclude Include="modGtMath.h" />
+    <ClInclude Include="modGtNetwork.h" />
+    <ClInclude Include="modGtProcess.h" />
+    <ClInclude Include="modGtStateMachine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GtBase\GtByteArray.cpp" />
+    <ClCompile Include="GtBase\GtException.cpp" />
+    <ClCompile Include="GtBase\GtObject.cpp" />
+    <ClCompile Include="GtBase\GtVariant.cpp" />
+    <ClCompile Include="GTCore.cpp" />
+    <ClCompile Include="GtCoreEnums.cpp" />
+    <ClCompile Include="GtCoreLibRefs.cpp" />
+    <ClCompile Include="GtEvent\GtEvent.cpp" />
+    <ClCompile Include="GtEvent\GtEventCreator.cpp" />
+    <ClCompile Include="GtEvent\GtEventEnums.cpp" />
+    <ClCompile Include="GtEvent\GtEventManager.cpp" />
+    <ClCompile Include="GtGeometry\GtAABox.cpp" />
+    <ClCompile Include="GtGeometry\GtLineF.cpp" />
+    <ClCompile Include="GtGeometry\GtLineI.cpp" />
+    <ClCompile Include="GtGeometry\GtPlane.cpp" />
+    <ClCompile Include="GtGeometry\GtPoint3DF.cpp" />
+    <ClCompile Include="GtGeometry\GtPoint3DI.cpp" />
+    <ClCompile Include="GtGeometry\GtPolylineF.cpp" />
+    <ClCompile Include="GtGeometry\GtPolylineI.cpp" />
+    <ClCompile Include="GtGeometry\GtRectF.cpp" />
+    <ClCompile Include="GtGeometry\GtRectI.cpp" />
+    <ClCompile Include="GtGeometry\GtSizeF.cpp" />
+    <ClCompile Include="GtGeometry\GtSizeI.cpp" />
+    <ClCompile Include="GtGraphic\GtBrush.cpp" />
+    <ClCompile Include="GtGraphic\GtColor.cpp" />
+    <ClCompile Include="GtGraphic\GtFont.cpp" />
+    <ClCompile Include="GtGraphic\GtGraphicEnums.cpp" />
+    <ClCompile Include="GtGraphic\GtGraphicStructs.cpp" />
+    <ClCompile Include="GtGraphic\GtMaterial.cpp" />
+    <ClCompile Include="GtGraphic\GtPainter.cpp" />
+    <ClCompile Include="GtGraphic\GtPainterGDI.cpp" />
+    <ClCompile Include="GtGraphic\GtPen.cpp" />
+    <ClCompile Include="GtGraphic\GtPixmap.cpp" />
+    <ClCompile Include="GtGraphic\GtWidget.cpp" />
+    <ClCompile Include="GtInputOutput\GtDir.cpp" />
+    <ClCompile Include="GtInputOutput\GtFile.cpp" />
+    <ClCompile Include="GtInputOutput\GtUrl.cpp" />
+    <ClCompile Include="GtItemModel\GtIndexSorting.cpp" />
+    <ClCompile Include="GtItemModel\GtItemEnums.cpp" />
+    <ClCompile Include="GtItemModel\GtListItemModel.cpp" />
+    <ClCompile Include="GtItemModel\GtListModelIndex.cpp" />
+    <ClCompile Include="GtItemModel\GtListSelection.cpp" />
+    <ClCompile Include="GtItemModel\GtTableItemModel.cpp" />
+    <ClCompile Include="GtItemModel\GtTableModelIndex.cpp" />
+    <ClCompile Include="GtItemModel\GtTableSelection.cpp" />
+    <ClCompile Include="GtItemModel\GtTreeItemModel.cpp" />
+    <ClCompile Include="GtItemModel\GtTreeModelIndex.cpp" />
+    <ClCompile Include="GtItemModel\GtTreeSelection.cpp" />
+    <ClCompile Include="GtMath\GtBasicMath.cpp" />
+    <ClCompile Include="GtMath\GtGeometryMath.cpp" />
+    <ClCompile Include="GtMath\GtVectorMath.cpp" />
+    <ClCompile Include="GtProcess\GtApplication.cpp" />
+    <ClCompile Include="GtProcess\GtAppSettings.cpp" />
+    <ClCompile Include="GtSorting\GtBubbleSort.cpp" />
+    <ClCompile Include="GtSorting\GtQuickSort.cpp" />
+    <ClCompile Include="GtStateMachine\GtState.cpp" />
+    <ClCompile Include="GtStateMachine\GtStateHistory.cpp" />
+    <ClCompile Include="GtStateMachine\GtStateMachine.cpp" />
+    <ClCompile Include="GtStateMachine\GtStateTransition.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

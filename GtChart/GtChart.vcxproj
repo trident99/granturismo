@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38C2DD7A-E447-4CF9-B73E-9E685CADE025}</ProjectGuid>
+    <RootNamespace>GtChart</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)V10Debug</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)V10Release</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\HTL;..\GtCore;..\GtGui;..\GtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>HTLV10Debug.lib;GtCoreV10Debug.lib;GtGuiV10Debug.lib;GtOpenGLV10Debug.lib;GdiPlus.lib;Gdi32.lib;msvcrt.lib;OpenGL32.lib;Glu32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\HTL;..\GtCore;..\GtGui;..\GtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>HTLV10Release.lib;GtCoreV10Release.lib;GtGuiV10Release.lib;GtOpenGLV10Release.lib;GdiPlus.lib;Gdi32.lib;msvcrt.lib;OpenGL32.lib;Glu32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GTChart.h" />
+    <ClInclude Include="GtChartLibRefs.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DBar.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DBase.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DColumn.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DCurve.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DGeneric.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DLegend.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DPieChart.h" />
+    <ClInclude Include="GtPlot2D\GtPlot2DScatter.h" />
+    <ClInclude Include="GtPlotAxisScale\GtAxisHorizontal.h" />
+    <ClInclude Include="GtPlotAxisScale\GtAxisVertical.h" />
+    <ClInclude Include="GtPlotAxisScale\GtScaleBase.h" />
+    <ClInclude Include="GtPlotAxisScale\GtScaleDate.h" />
+    <ClInclude Include="GtPlotAxisScale\GtScaleLogarithm.h" />
+    <ClInclude Include="GtPlotAxisScale\GtScalePower.h" />
+    <ClInclude Include="GtPlotModel\GtColorMap.h" />
+    <ClInclude Include="GtPlotModel\GtPlotBar.h" />
+    <ClInclude Include="GtPlotModel\GtPlotCanvas.h" />
+    <ClInclude Include="GtPlotModel\GtPlotColumn.h" />
+    <ClInclude Include="GtPlotModel\GtPlotCurve.h" />
+    <ClInclude Include="GtPlotModel\GtPlotItem.h" />
+    <ClInclude Include="GtPlotModel\GtPlotPie.h" />
+    <ClInclude Include="GtPlotModel\GtPlotPointSet.h" />
+    <ClInclude Include="GtPlotModel\GtPlotSelection.h" />
+    <ClInclude Include="GtPlotModel\GtPlotSymbol.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GTChart.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DBar.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DBase.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DColumn.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DCurve.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DGeneric.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DLegend.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DPieChart.cpp" />
+    <ClCompile Include="GtPlot2D\GtPlot2DScatter.cpp" />
+    <ClCompile Include="GtPlotAxisScale\GtAxisHorizontal.cpp" />
+    <ClCompile Include="GtPlotAxisScale\GtAxisVertical.cpp" />
+    <ClCompile Include="GtPlotAxisScale\GtScaleBase.cpp" />
+    <ClCompile Include="GtPlotAxisScale\GtScaleDate.cpp" />
+    <ClCompile Include="GtPlotAxisScale\GtScaleLogarithm.cpp" />
+    <ClCompile Include="GtPlotAxisScale\GtScalePower.cpp" />
+    <ClCompile Include="GtPlotModel\GtColorMap.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotBar.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotCanvas.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotColumn.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotCurve.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotItem.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotPie.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotPointSet.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotSelection.cpp" />
+    <ClCompile Include="GtPlotModel\GtPlotSymbol.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
