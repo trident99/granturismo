@@ -177,12 +177,25 @@ namespace GT
 				if(m_intSelIndex == i)
 				{//then selected
 					painter->Set_objPen(m_objPen);
+					painter->Set_objBrush(GtBrush(GtColor(160,160,160)));
+					painter->GtDrawEllipse(m_arrOptionBoxes.at(i));
+
+					GtRectI buttonrect = m_arrOptionBoxes.at(i);
+					buttonrect.xMin += 5;
+					buttonrect.yMin += 5;
+					buttonrect.xMax -= 5;
+					buttonrect.yMax -= 5;
+
 					painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
+					painter->GtDrawEllipse(buttonrect);
+
+
 				}else{
 					painter->Set_objPen(m_objPen);
 					painter->Set_objBrush(GtBrush(GtColor(255,255,255)));
+					painter->GtDrawEllipse(m_arrOptionBoxes.at(i));
 				}
-				painter->GtDrawEllipse(m_arrOptionBoxes.at(i));
+				
 				//draw text
 				GtPoint3DI textPos;
 				textPos.x = m_arrOptionBoxes.at(i).xMax + 5;

@@ -101,15 +101,15 @@ namespace GT
 				checkPen.Set_sngWidth(4);
 				painter->Set_objPen(checkPen);
 
-				fore.m_P0.x = m_rectCheck.xMin;
-				fore.m_P0.y = m_rectCheck.yMin;
-				fore.m_P1.x = m_rectCheck.xMax;
-				fore.m_P1.y = m_rectCheck.yMax;
+				fore.m_P0.x = m_rectCheck.xMin + 5;
+				fore.m_P0.y = m_rectCheck.yMin + 5;
+				fore.m_P1.x = m_rectCheck.xMax - 5;
+				fore.m_P1.y = m_rectCheck.yMax - 5;
 				
-				back.m_P0.x = m_rectCheck.xMax;
-				back.m_P0.y = m_rectCheck.yMin;
-				back.m_P1.x = m_rectCheck.xMin;
-				back.m_P1.y = m_rectCheck.yMax;
+				back.m_P0.x = m_rectCheck.xMax - 5;
+				back.m_P0.y = m_rectCheck.yMin + 5;
+				back.m_P1.x = m_rectCheck.xMin + 5;
+				back.m_P1.y = m_rectCheck.yMax - 5;
 
 				painter->GtDrawLine(fore);
 				painter->GtDrawLine(back);
