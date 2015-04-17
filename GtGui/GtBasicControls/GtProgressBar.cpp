@@ -89,13 +89,26 @@ namespace GT
 			GtLineI bar;
 			float percent = ((float)m_intValue) / ((float)(m_intMax - m_intMin));
 			int posX = m_objFrame.xMin + gRound(percent * (m_objFrame.xMax - m_objFrame.xMin));
-
-			m_rectBar = m_objFrame;
-			m_rectBar.xMax = posX; 
-			m_rectBar.yMin = m_objFrame.yMin + 5;
-			m_rectBar.yMax = m_objFrame.yMax - 5;
+			
+			float halfHeight = (m_objFrame.yMax + m_objFrame.yMin) / 2.0f;
+			m_rectBarUpper = m_objFrame;
+			m_rectBarUpper.xMin += 2; 
+			m_rectBarUpper.xMax = posX; 
+			m_rectBarUpper.yMin = m_objFrame.yMin + 5;
+			m_rectBarUpper.yMax = gRound(halfHeight);
+			painter->Set_objPen(GtPen(GtColor(0,200,0)));
 			painter->Set_objBrush(GtBrush(GtColor(0,200,0)));
-			painter->GtDrawRect(m_rectBar);
+			painter->GtDrawRect(m_rectBarUpper);
+
+			m_rectBarLower = m_objFrame;
+			m_rectBarLower.xMin += 2; 
+			m_rectBarLower.xMax = posX; 
+			m_rectBarLower.yMin = gRound(halfHeight);
+			m_rectBarLower.yMax = m_objFrame.yMax - 5;
+			painter->Set_objPen(GtPen(GtColor(0,180,0)));
+			painter->Set_objBrush(GtBrush(GtColor(0,180,0)));
+			painter->GtDrawRect(m_rectBarLower);
+
 			//Draw Marker
 
 			bar.m_P0.x = posX ;

@@ -273,7 +273,12 @@ void TestWindow::InitializeControls(void)
 		ptrProgress->Set_objBackBrush(GtBrush(GtColor(160, 160, 160)));
 		this->AddSubWidget(ptrProgress);
 	}
-
+	//Hook up the progress bar to the slider.
+	//Good example of signal slot with single argument
+	if((ptrSlider)&&(ptrProgress))
+	{
+		ptrSlider->ValueChanged.SlotConnect<GtProgressBar>(ptrProgress, &GtProgressBar::Set_intValue);
+	}
 
 	GtRectI radioRect;
 	GtRadioButton * ptrRadio = new GtRadioButton(this);

@@ -147,7 +147,7 @@ namespace GT
 					if(newVal < m_intMin){newVal = m_intMin;};
 					if(newVal > m_intMax){newVal = m_intMax;};
 					//set the new value
-					m_intValue = newVal;
+					this->Set_intValue(newVal);
 
 					this->PostPaint();
 					return 1;

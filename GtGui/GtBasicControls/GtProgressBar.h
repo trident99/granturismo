@@ -61,8 +61,8 @@ namespace GT
 			virtual int OnPaint(GtPainter * painter = NULL);
 
 		protected:
-
-			GtRectI m_rectBar;
+			GtRectI m_rectBarUpper;
+			GtRectI m_rectBarLower;
 
 		};//end GtVertScrollBar class definition
 
