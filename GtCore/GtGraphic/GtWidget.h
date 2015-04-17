@@ -60,7 +60,9 @@ namespace GT
 			//!String name for the object
 			GTOBJECT_MEMVAR_BYREF(public, std::string, strName);
 			//!String title for the object
-			GTOBJECT_MEMVAR_BYREF(public, std::string, strText);
+			//!The rectangle geometry for the widget
+			std::string Get_strText(void){return m_strText;};
+			virtual void Set_strText(std::string & str);
 
 			//FLAGS
 			//!Boolean flag for has focus
@@ -224,6 +226,8 @@ namespace GT
 			bool m_blnVisible;
 			//!Boolean flag for is enabled
 			bool m_blnEnabled;
+			//!String for display
+			std::string m_strText;
 			//!Main widget frame
 			GtRectI m_objFrame;
 			//!Collection of Child Widgets

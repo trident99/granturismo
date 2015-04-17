@@ -285,6 +285,9 @@
     <ClInclude Include="GtStateMachine\GtStateTransition.h">
       <Filter>Header Files\GtStateMachine</Filter>
     </ClInclude>
+    <ClInclude Include="GtCoreStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GtBase\GtByteArray.cpp">
@@ -462,6 +465,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GtCoreLibRefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GtCoreStructs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

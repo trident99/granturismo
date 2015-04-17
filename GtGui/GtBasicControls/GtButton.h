@@ -28,6 +28,7 @@
 #define GT_BUTTON_H
 
 #include ".\GtFrame.h"
+#include <GtCoreStructs.h> //for GtTextLine
 
 using namespace HTL;
 using namespace GT::GtCore;
@@ -55,7 +56,7 @@ namespace GT
 			//!The rectangle geometry for the widget
 			GTOBJECT_MEMVAR_BYREF(public, GtPixmap, objIcon);
 
-
+			virtual void Set_strText(std::string & str);
 			//SIGNALS/////////////////////////////////
 		public:
 			//!Signal for Action object changed
@@ -72,11 +73,36 @@ namespace GT
 
 			//MEMBER FUNCTIONS////////////////////////
 		public:
-		
+			//!Pagination based on new text input
+			void RepaginateText(void);	
+
 			//!Custom Event Processing
 			virtual int HandleEvent(GtEvent * ptrEvent);
 			//!Custom Widget Painting
-			virtual int OnPaint(GtPainter * painter = NULL);		
+			virtual int OnPaint(GtPainter * painter = NULL);
+
+		protected:
+			//!The text Lines
+			Htl1DList<GtTextLine,HtlUnknownType> m_arrLines;
+
+		private:
+			// Font-related data	
+			int		m_nFontWidth;
+			int		m_nLineHeight;
+			// Display-related data
+			int		m_nTabWidthChars;
+			GtCursor m_objCursor;
+			GtWinFont m_winFont;
+			//!Find the next White Space Character
+			long FindNextWSChar(const std::string & strInput,size_t intStartPos);
+			//!Find the previous White Space Character
+			long FindPrevWSChar(const std::string & strInput,size_t intStartPos);
+			
+			int CalcTabWidth(void);
+			int CalcStringWidth(HDC hdc, const char *buf, int len, int nTabOrigin);
+			int CalcStringHeight(HDC hdc);
+			void ConvGtFontToWinFont(void);
+
 
 		};//end GtButton class definition
 

@@ -527,6 +527,11 @@ namespace GT
 			return abs(m_objFrame.xMax - m_objFrame.xMin);
 		};
 
+		void GtWidget::Set_strText(std::string & str)
+		{
+			m_strText = str;
+		};
+
 		void GtWidget::Set_objFrame(GtRectI & frame)
 		{
 			m_objFrame = frame;

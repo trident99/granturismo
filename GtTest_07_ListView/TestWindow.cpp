@@ -112,6 +112,7 @@ void TestWindow::InitializeControls(void)
 			m_cmdLoadList02->Set_objBackBrush(GtBrush(GtColor(150,150,150)));
 			strCmd = "Load List\r\nNo. 02";
 			m_cmdLoadList02->Set_strText(strCmd);
+			m_cmdLoadList02->RepaginateText();//multiline support
 			this->AddSubWidget(m_cmdLoadList02);			
 		}	
 	};
@@ -129,6 +130,7 @@ void TestWindow::InitializeControls(void)
 			m_cmdLoadList03->Set_objBackBrush(GtBrush(GtColor(150,150,150)));
 			strCmd = "Load List\r\nNo. 03";
 			m_cmdLoadList03->Set_strText(strCmd);
+			m_cmdLoadList03->RepaginateText();//multiline support
 			this->AddSubWidget(m_cmdLoadList03);			
 		}	
 	};

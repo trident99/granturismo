@@ -87,6 +87,7 @@
     <ClInclude Include="GTCore.h" />
     <ClInclude Include="GtCoreEnums.h" />
     <ClInclude Include="GtCoreLibRefs.h" />
+    <ClInclude Include="GtCoreStructs.h" />
     <ClInclude Include="GtEvent\GtEvent.h" />
     <ClInclude Include="GtEvent\GtEventCreator.h" />
     <ClInclude Include="GtEvent\GtEventEnums.h" />
@@ -159,6 +160,7 @@
     <ClCompile Include="GTCore.cpp" />
     <ClCompile Include="GtCoreEnums.cpp" />
     <ClCompile Include="GtCoreLibRefs.cpp" />
+    <ClCompile Include="GtCoreStructs.cpp" />
     <ClCompile Include="GtEvent\GtEvent.cpp" />
     <ClCompile Include="GtEvent\GtEventCreator.cpp" />
     <ClCompile Include="GtEvent\GtEventEnums.cpp" />
