@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\GT_WORK\GTBasicTest13\TestWindow.h">
+    <ClInclude Include="TestWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\GT_WORK\GTBasicTest13\main13.cpp">
+    <ClCompile Include="main13.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\GT_WORK\GTBasicTest13\TestWindow.cpp">
+    <ClCompile Include="TestWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
