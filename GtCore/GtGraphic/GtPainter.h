@@ -156,6 +156,9 @@ namespace GT
 			//!Draw a Rectangle Frame
 			virtual void  GtDrawFrame (  GtRectF & rect, bool blnOffset = false  ); 
 			virtual void  GtDrawFrame (  GtRectI & rect, bool blnOffset = false  );
+			//!Draw a Bevel Raised or Sunken Frame
+			virtual void  GtDrawBevelFrameRaised (  GtRectI & rect, int width, bool blnOffset = false  ); 
+			virtual void  GtDrawBevelFrameSunken (  GtRectI & rect, int width, bool blnOffset = false  );
 			//!Draw a Rounded Rectangle
 			virtual void  GtDrawRoundedRect (  GtRectF & rect, float radius, bool blnOffset = false );
 			virtual void  GtDrawRoundedRect (  GtRectI & rect, int radius, bool blnOffset = false );

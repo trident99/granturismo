@@ -154,6 +154,9 @@ namespace GT
 		//!Draw a Rectangle Frame
 		void  GtPainter::GtDrawFrame (  GtRectF & rect, bool blnOffset ){return;}; 
 		void  GtPainter::GtDrawFrame (  GtRectI & rect, bool blnOffset ){return;};
+		//!Draw a Bevel Raised or Sunken Frame
+		void  GtPainter::GtDrawBevelFrameRaised (  GtRectI & rect, int width, bool blnOffset){return;};
+		void  GtPainter::GtDrawBevelFrameSunken (  GtRectI & rect, int width, bool blnOffset){return;};
 		//!Draw a Rounded Rectangle
 		void  GtPainter::GtDrawRoundedRect (  GtRectF & rect, float radius, bool blnOffset){return;};
 		void  GtPainter::GtDrawRoundedRect (  GtRectI & rect, int radius, bool blnOffset){return;};

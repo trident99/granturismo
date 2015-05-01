@@ -731,6 +731,57 @@ namespace GT
 			}
 			return;
 		};
+
+
+		//!Draw a Bevel Raised or Sunken Frame
+		void  GtPainterGDI::GtDrawBevelFrameRaised (  GtRectI & rect, int width, bool blnOffset )
+		{
+			
+			if(!blnOffset)
+			{
+				m_objPen.Set_sngWidth(width);
+				m_objPen.Set_objColor(GtColor(100,100,100));
+				GtSetSystemPen();
+				SelectObject(m_hdcCurr, m_ptrSysPen);
+				::MoveToEx(m_hdcCurr, (rect.xMin), (rect.yMax), NULL);
+				::LineTo(m_hdcCurr, (rect.xMax), (rect.yMax));
+				::LineTo(m_hdcCurr, (rect.xMax), (rect.yMin));
+
+				m_objPen.Set_objColor(GtColor(200,200,200));
+				GtSetSystemPen();
+				SelectObject(m_hdcCurr, m_ptrSysPen);
+				::LineTo(m_hdcCurr, (rect.xMin), (rect.yMin));
+				::LineTo(m_hdcCurr, (rect.xMin), (rect.yMax));
+			}else{
+
+
+			}
+			return;
+		};
+		void  GtPainterGDI::GtDrawBevelFrameSunken (  GtRectI & rect, int width, bool blnOffset )
+		{
+			
+			if(!blnOffset)
+			{
+				m_objPen.Set_sngWidth(width);
+				m_objPen.Set_objColor(GtColor(200,200,200));
+				GtSetSystemPen();
+				SelectObject(m_hdcCurr, m_ptrSysPen);
+				::MoveToEx(m_hdcCurr, (rect.xMin), (rect.yMax), NULL);
+				::LineTo(m_hdcCurr, (rect.xMax), (rect.yMax));
+				::LineTo(m_hdcCurr, (rect.xMax), (rect.yMin));
+
+				m_objPen.Set_objColor(GtColor(100,100,100));
+				GtSetSystemPen();
+				SelectObject(m_hdcCurr, m_ptrSysPen);
+				::LineTo(m_hdcCurr, (rect.xMin), (rect.yMin));
+				::LineTo(m_hdcCurr, (rect.xMin), (rect.yMax));
+			}else{
+
+			}
+			return;
+		};
+
 		//!Draw a gRounded Rectangle
 		void  GtPainterGDI::GtDrawRoundedRect (  GtRectF & rect, float radius, bool blnOffset)
 		{

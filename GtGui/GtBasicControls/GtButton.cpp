@@ -138,7 +138,14 @@ namespace GT
 				painter->Set_objPen(m_objPen);
 				painter->Set_objBrush(m_objBackBrush);
 			}
-			painter->GtDrawRoundedRect(outRect,10);
+			painter->GtDrawRect(outRect);
+			//draw beveling
+			if(m_blnButtonUp)
+			{
+				painter->GtDrawBevelFrameRaised(outRect,4);
+			}else{
+				painter->GtDrawBevelFrameSunken(outRect,4);
+			}
 
 			int i, numLines;
 			numLines = m_arrLines.size();
