@@ -247,8 +247,8 @@ namespace GT
 			m_ptrPainter->Set_winID(this->m_winID);
 			m_ptrPainter->GtBeginPainting();
 			//set the event managers painter
+			this->m_objEventManager.Set_ptrRootWidget(this);
 			this->m_objEventManager.Set_ptrPainter(m_ptrPainter);
-
 
 			//start listening in on windows
 			this->m_objEventManager.Set_blnRunning(true);

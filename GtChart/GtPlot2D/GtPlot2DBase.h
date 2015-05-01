@@ -119,7 +119,7 @@ namespace GT
 			int DrawLegend(GtPainter * painter = NULL);
 			//!The plot canvas for the plot
 			GtPlotCanvas* m_ptrCanvas;
-
+			GtCanvas m_drawCanvas;
 			GtPlot2DLegend* m_ptrLegend;
 			Htl1DList<GtAxisHorizontal*,HtlUnknownType> m_arrHorizAxis;
 

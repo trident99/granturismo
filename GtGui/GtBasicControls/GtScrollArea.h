@@ -119,6 +119,8 @@ namespace GT
 			GtWidget* m_ptrTarget;
 			//!The position of the target top left point that is visible
 			GtPoint3DI m_objTargetPos;
+			//!Canvas for painting the scollable area
+			GtCanvas m_objAreaCanvas;
 
 			void UpdateScrollGeometry(void);
 

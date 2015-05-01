@@ -59,7 +59,7 @@ namespace GT
 			virtual bool GtEndPainting(void);
 
 			//!Start drawing on a canvas
-			virtual void GtStartCanvas(GtCanvas cv);
+			virtual void GtStartCanvas(GtCanvas * ptrCV);
 			//!Start drawing on a canvas
 			virtual void GtEndCanvas(void);
 
@@ -168,7 +168,7 @@ namespace GT
 
 			PIXELFORMATDESCRIPTOR m_pfd;
 
-			Htl1DList<GtCanvas,HtlUnknownType> m_arrCanvas;
+			Htl1DList<GtCanvas*,HtlUnknownType> m_arrCanvas;
 
 
 		};//end GtPainter

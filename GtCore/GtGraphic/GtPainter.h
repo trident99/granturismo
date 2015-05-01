@@ -62,6 +62,9 @@ namespace GT
 		{
 			GtCanvas();
 			~GtCanvas();
+			void Initialize(void);
+			void Clear (void);
+			void Reset (void);
 			//viewport frame
 			GtRectI m_view;
 			//viewport frame
@@ -76,7 +79,8 @@ namespace GT
 			HDC m_hdcMem;
 			//!handle for memory bitmap
 			HBITMAP m_hbmMem;
-
+			//!Boolean flag for initialization
+			bool m_blnInitialized;
 		};
 
 		//The GtPainter is a windows GDI painter for painting the 2D Graphics of the windows system and their widgets
@@ -118,7 +122,7 @@ namespace GT
 			virtual bool GtEndPainting(void);
 
 			//!Start drawing on a canvas
-			virtual void GtStartCanvas(GtCanvas cv);
+			virtual void GtStartCanvas(GtCanvas *ptrCV);
 			//!Start drawing on a canvas
 			virtual void GtEndCanvas(void);
 

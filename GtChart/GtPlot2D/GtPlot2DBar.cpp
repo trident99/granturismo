@@ -74,20 +74,20 @@ namespace GT
 			if(numItems <= 0){return 0;};//nothing to render
 			if(CountHorizAxis() <= 0){return 0;};//nothing to render
 			if(CountVertAxis() <= 0){return 0;};//nothing to render		
-			GtCanvas scrollCanvas;
-			scrollCanvas.m_view = m_objFrame;
+
+			m_drawCanvas.m_view = m_objFrame;
 			//m_ptrCanvas->ResizeCanvas();
-			scrollCanvas.m_frame = m_ptrCanvas->Get_objFrame();
+			m_drawCanvas.m_frame = m_ptrCanvas->Get_objFrame();
 
 			//rectify so canvas includes all of real frame
-			if(scrollCanvas.m_view.xMin < scrollCanvas.m_frame.xMin){scrollCanvas.m_frame.xMin = scrollCanvas.m_view.xMin;};
-			if(scrollCanvas.m_view.yMin < scrollCanvas.m_frame.yMin){scrollCanvas.m_frame.yMin = scrollCanvas.m_view.yMin;};
-			if(scrollCanvas.m_view.xMax > scrollCanvas.m_frame.xMax){scrollCanvas.m_frame.xMax = scrollCanvas.m_view.xMax;};
-			if(scrollCanvas.m_view.yMax > scrollCanvas.m_frame.yMax){scrollCanvas.m_frame.yMax = scrollCanvas.m_view.yMax;};
-			scrollCanvas.m_frame.xMax += 100; //100 pixel buffer
-			scrollCanvas.m_frame.yMax += 100; //100 pixel buffer
+			if(m_drawCanvas.m_view.xMin < m_drawCanvas.m_frame.xMin){m_drawCanvas.m_frame.xMin = m_drawCanvas.m_view.xMin;};
+			if(m_drawCanvas.m_view.yMin < m_drawCanvas.m_frame.yMin){m_drawCanvas.m_frame.yMin = m_drawCanvas.m_view.yMin;};
+			if(m_drawCanvas.m_view.xMax > m_drawCanvas.m_frame.xMax){m_drawCanvas.m_frame.xMax = m_drawCanvas.m_view.xMax;};
+			if(m_drawCanvas.m_view.yMax > m_drawCanvas.m_frame.yMax){m_drawCanvas.m_frame.yMax = m_drawCanvas.m_view.yMax;};
+			m_drawCanvas.m_frame.xMax += 100; //100 pixel buffer
+			m_drawCanvas.m_frame.yMax += 100; //100 pixel buffer
 
-			m_ptrCanvas->Set_objFrame(scrollCanvas.m_frame);
+			m_ptrCanvas->Set_objFrame(m_drawCanvas.m_frame);
 			//get upper left point (xmin, ymax) of the displayed area for the canvas
 			float top = 0;
 			float left = 0;
@@ -105,13 +105,13 @@ namespace GT
 				ptrYAxis->ModelToViewPt(modTop,top);
 			};
 
-			scrollCanvas.m_delta.x = (long)left;
-			scrollCanvas.m_delta.y = (long)top;
+			m_drawCanvas.m_delta.x = (long)left;
+			m_drawCanvas.m_delta.y = (long)top;
 			///the destination view frame upper left
-			scrollCanvas.m_dest.x = m_objFrame.xMin;
-			scrollCanvas.m_dest.y = m_objFrame.yMin;
+			m_drawCanvas.m_dest.x = m_objFrame.xMin;
+			m_drawCanvas.m_dest.y = m_objFrame.yMin;
 			//paint the actual canvas
-			painter->GtStartCanvas(scrollCanvas);
+			painter->GtStartCanvas(&m_drawCanvas);
 			m_ptrCanvas->Draw(painter);
 			painter->GtEndCanvas();
 			//now draw the grid overlay

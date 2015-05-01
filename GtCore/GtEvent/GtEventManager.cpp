@@ -47,6 +47,7 @@ namespace GT{
 			this->m_winID = NULL;
 			this->m_ptrMainProc = NULL;
 			this->m_ptrPainter = NULL;
+			this->m_ptrRootWidget = NULL;
 		};
 
 		//!Destructor
@@ -187,32 +188,26 @@ namespace GT{
 		{
 			size_t i, numObjs;
 			if(!m_ptrPainter){return;};//safety check
+			if(!m_ptrRootWidget){return;};//safety check
 			if(!m_blnRunning){return;};//shutdown safety check
-			numObjs = m_arrObjects.size();
-			for(i = 0; i < numObjs; i++)
-			{
-				GtWidget* ptrDraw = dynamic_cast<GtWidget*>(m_arrObjects.at(i));
-				if(ptrDraw)
-				{
-					GtCanvas topCanvas;
-					topCanvas.m_frame = ptrDraw->Get_objFrame();
-					topCanvas.m_view = topCanvas.m_frame;
-					m_ptrPainter->Set_objViewport(topCanvas.m_frame);
-					m_ptrPainter->GtStartCanvas(topCanvas);
-					//invalidate the canvas region
-					RECT inval;
-					inval.left = topCanvas.m_frame.xMin;
-					inval.right = topCanvas.m_frame.xMax;
-					inval.top = topCanvas.m_frame.yMin;
-					inval.bottom = topCanvas.m_frame.yMax;
-					::InvalidateRect(m_winID,&inval,FALSE);
-					//paint the object
-					ptrDraw->OnPaint(m_ptrPainter);
+			
+			GtCanvas topCanvas;
+			m_rootCanvas.m_frame = m_ptrRootWidget->Get_objFrame();
+			m_rootCanvas.m_view = m_rootCanvas.m_frame;
+			m_ptrPainter->Set_objViewport(topCanvas.m_frame);
+			m_ptrPainter->GtStartCanvas(&m_rootCanvas);
+			//invalidate the canvas region
+			RECT inval;
+			inval.left = topCanvas.m_frame.xMin;
+			inval.right = topCanvas.m_frame.xMax;
+			inval.top = topCanvas.m_frame.yMin;
+			inval.bottom = topCanvas.m_frame.yMax;
+			::InvalidateRect(m_winID,&inval,FALSE);
+			//paint the object
+			m_ptrRootWidget->OnPaint(m_ptrPainter);
 
-					//end the canvas and painting session
-					m_ptrPainter->GtEndCanvas();
-				}
-			}	
+			//end the canvas and painting session
+			m_ptrPainter->GtEndCanvas();
 			
 		};
 			

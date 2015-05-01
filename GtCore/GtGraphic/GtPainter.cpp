@@ -41,6 +41,7 @@ namespace GT
 
 		GtCanvas::GtCanvas()
 		{
+			m_blnInitialized = false;
 			//!handle for parent hdc (or final)
 			m_hdcParent = 0;
 			//!handle for memory hdc
@@ -56,7 +57,44 @@ namespace GT
 
 			m_delta.Zero();
 		};
-		GtCanvas::~GtCanvas(){};
+		GtCanvas::~GtCanvas()
+		{
+			this->Clear();
+		};
+
+		void GtCanvas::Initialize(void)
+		{
+			if(m_blnInitialized){return;}//do only once
+
+			if(m_hdcParent)
+			{
+				m_hdcMem = CreateCompatibleDC(m_hdcParent);
+				int win_width, win_height;
+				win_width = m_frame.xMax - m_frame.xMin;
+				win_height = m_frame.yMax - m_frame.yMin;
+				m_hbmMem = CreateCompatibleBitmap(m_hdcParent, win_width, win_height);
+				m_blnInitialized = true;
+			};
+
+		};
+
+		void GtCanvas::Clear (void)
+		{
+			DeleteObject(m_hbmMem);
+			DeleteDC(m_hdcMem);
+		};
+
+		void GtCanvas::Reset (void)
+		{
+			DeleteObject(m_hbmMem);
+			DeleteDC(m_hdcMem);
+			m_hdcMem = CreateCompatibleDC(m_hdcParent);
+			int win_width, win_height;
+			win_width = m_frame.xMax - m_frame.xMin;
+			win_height = m_frame.yMax - m_frame.yMin;
+			m_hbmMem = CreateCompatibleBitmap(m_hdcParent, win_width, win_height);
+			m_blnInitialized = true;
+		};
 
 
 
@@ -83,7 +121,7 @@ namespace GT
 		//!End a Painting Session
 		bool GtPainter::GtEndPainting(void){return false;};
 		//!Start drawing on a canvas
-		void GtPainter::GtStartCanvas(GtCanvas cv){return;};
+		void GtPainter::GtStartCanvas(GtCanvas * ptrCV){return;};
 		//!Start drawing on a canvas
 		void GtPainter::GtEndCanvas(void){return;};
 		//!Reset a Painting Session

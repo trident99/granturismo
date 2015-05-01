@@ -64,6 +64,9 @@ namespace GT
 			HTLMEMVAR_BYVAL_STYLE1(public, HWND, winID);
 			//!enum representation of the event class type
 			HTLMEMVAR_BYVAL_STYLE1(public, GtPainter*, ptrPainter);
+			//!The ROOT widget
+			HTLMEMVAR_BYVAL_STYLE1(public, GtWidget*, ptrRootWidget);
+
 			//!Check to see if it is running still
 			bool IsRunning(void){return m_blnRunning;};
 
@@ -108,7 +111,8 @@ namespace GT
 			Htl1DList<GtEvent,HtlUnknownType> m_arrPostedEvents;
 			//!The FOCUS widget
 			GtWidget* m_ptrFocusWidget;
-
+			//!Canvas for painting
+			GtCanvas m_rootCanvas;
 			
 		};//end GtEventManager
 

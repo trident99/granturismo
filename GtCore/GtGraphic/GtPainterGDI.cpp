@@ -152,29 +152,32 @@ namespace GT
 		}
 
 		//!Start drawing on a canvas
-		void GtPainterGDI::GtStartCanvas(GtCanvas cv)
+		void GtPainterGDI::GtStartCanvas(GtCanvas * ptrCV)
 		{
+			if(!ptrCV){return;};//safety check
+
 			size_t numCvs;
 			numCvs = m_arrCanvas.size();
 			if(numCvs <= 0)
 			{//first canvas, parent is final
-				cv.m_hdcParent = m_hdcFinal;
+				ptrCV->m_hdcParent = m_hdcFinal;
+				ptrCV->Reset();
 			}else{
 				//get the hdc from the next one in the stack
-				cv.m_hdcParent = m_arrCanvas.back().m_hdcMem;
+				if(m_arrCanvas.back())
+				{
+					ptrCV->m_hdcParent = m_arrCanvas.back()->m_hdcMem;
+					ptrCV->Initialize();
+				}
 			}
 
-			cv.m_hdcMem = CreateCompatibleDC(cv.m_hdcParent);
-			int win_width, win_height;
-			win_width = cv.m_frame.xMax - cv.m_frame.xMin;
-			win_height = cv.m_frame.yMax - cv.m_frame.yMin;
-			cv.m_hbmMem = CreateCompatibleBitmap(m_hdcFinal, win_width, win_height);
 
-			m_hSel   = SelectObject(cv.m_hdcMem, cv.m_hbmMem);
-			m_hdcCurr = cv.m_hdcMem;
-			m_hBitmapCurr = cv.m_hbmMem;
 
-			m_arrCanvas.push_back(cv);
+			m_hSel   = SelectObject(ptrCV->m_hdcMem, ptrCV->m_hbmMem);
+			m_hdcCurr = ptrCV->m_hdcMem;
+			m_hBitmapCurr = ptrCV->m_hbmMem;
+
+			m_arrCanvas.push_back(ptrCV);
 			return;
 		};
 		//!Start drawing on a canvas
@@ -184,18 +187,17 @@ namespace GT
 			numCvs = m_arrCanvas.size();
 			if(numCvs <= 0){return;};
 
-			GtCanvas topCv = m_arrCanvas.back();
-			int win_width, win_height;
-			win_width = topCv.m_view.xMax - topCv.m_view.xMin;
-			win_height = topCv.m_view.yMax - topCv.m_view.yMin;
-			// Transfer the off-screen DC to the screen
-			bool success = BitBlt(topCv.m_hdcParent, topCv.m_dest.x, topCv.m_dest.y, win_width, win_height,
-				topCv.m_hdcMem, topCv.m_delta.x, topCv.m_delta.y, SRCCOPY);
-
-			// Free-up the off-screen DC
-			SelectObject(topCv.m_hdcMem, m_hSel);
-			DeleteObject(topCv.m_hbmMem);
-			DeleteDC    (topCv.m_hdcMem);
+			GtCanvas * topCv = m_arrCanvas.back();
+			if(topCv)
+			{
+				int win_width, win_height;
+				win_width = topCv->m_view.xMax - topCv->m_view.xMin;
+				win_height = topCv->m_view.yMax - topCv->m_view.yMin;
+				// Transfer the off-screen DC to the screen
+				bool success = BitBlt(topCv->m_hdcParent, topCv->m_dest.x, topCv->m_dest.y, win_width, win_height,
+					topCv->m_hdcMem, topCv->m_delta.x, topCv->m_delta.y, SRCCOPY);
+			}
+			//topCv->Clear();
 			m_arrCanvas.pop_back();//pop it off the stack
 
 			numCvs = m_arrCanvas.size();
@@ -205,8 +207,8 @@ namespace GT
 				return;
 			};
 			//otherwise get the next current
-			m_hdcCurr = m_arrCanvas.back().m_hdcMem;
-			m_hBitmapCurr = m_arrCanvas.back().m_hbmMem;
+			m_hdcCurr = m_arrCanvas.back()->m_hdcMem;
+			m_hBitmapCurr = m_arrCanvas.back()->m_hbmMem;
 
 		};
 		//!Reset a Painting Session

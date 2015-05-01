@@ -55,6 +55,7 @@ namespace GT
 			//!Virtual destructor
 		GtScrollArea::~GtScrollArea(void)
 		{
+			m_objAreaCanvas.Clear();
 			m_objHorizScroll.ValueChanged.SlotDisconnect(this);
 			m_objVertScroll.ValueChanged.SlotDisconnect(this);
 		};
@@ -331,16 +332,16 @@ namespace GT
 			//render the target window
 			if(m_ptrTarget)
 			{
-				GtCanvas scrollCanvas;
-				scrollCanvas.m_view = m_objViewFrame;
-				scrollCanvas.m_frame = m_ptrTarget->Get_objFrame();
-				scrollCanvas.m_delta.x = m_objHorizScroll.Get_intValue();
-				scrollCanvas.m_delta.y = m_objVertScroll.Get_intValue();
+				
+				m_objAreaCanvas.m_view = m_objViewFrame;
+				m_objAreaCanvas.m_frame = m_ptrTarget->Get_objFrame();
+				m_objAreaCanvas.m_delta.x = m_objHorizScroll.Get_intValue();
+				m_objAreaCanvas.m_delta.y = m_objVertScroll.Get_intValue();
 
-				scrollCanvas.m_dest.x = m_objViewFrame.xMin;
-				scrollCanvas.m_dest.y = m_objViewFrame.yMin;
+				m_objAreaCanvas.m_dest.x = m_objViewFrame.xMin;
+				m_objAreaCanvas.m_dest.y = m_objViewFrame.yMin;
 
-				painter->GtStartCanvas(scrollCanvas);
+				painter->GtStartCanvas(&m_objAreaCanvas);
 				m_ptrTarget->OnPaint(painter);
 				painter->GtEndCanvas();
 			}
