@@ -165,7 +165,7 @@ namespace GT
 			ptrPainter->Set_objBrush(m_objBackBrush);
 			ptrPainter->Set_objFont(m_objFont);
 			ptrPainter->GtFillRect(m_objFrame);
-			ptrPainter->GtDrawFrame(m_objFrame);
+			ptrPainter->GtDrawBevelFrameSunken(m_objFrame,2);
 
 			//draw the highlight rect
 			

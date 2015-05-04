@@ -162,7 +162,7 @@ namespace GT
 			painter->Set_objBrush(m_objBackBrush);
 			painter->Set_objFont(m_objFont);
 			painter->GtFillRect(m_objFrame);
-			painter->GtDrawFrame(m_objFrame);
+			painter->GtDrawBevelFrameSunken(m_objFrame,2);
 
 			numLines = m_arrLines.size();
 			//draw the highlight rect
