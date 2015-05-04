@@ -396,6 +396,7 @@ namespace GT
 			m_rectText.xMin = m_rectCombo.xMax; 
 			m_rectText.yMax = m_rectCombo.yMax;			
 			painter->GtDrawRect(m_rectText);
+			painter->GtDrawBevelFrameSunken(m_rectText,2);
 
 			if(!m_blnShowMenu)
 			{
@@ -403,11 +404,13 @@ namespace GT
 				GtPoint3DI pos;
 				GtPolylineI tri;
 				painter->GtDrawBevelFrameRaised(m_rectCombo,2);
+				painter->Set_objPen(GtPen(GtColor(0,0,0)));
 				painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
 				painter->GtDrawTriangleRight(m_rectCombo,5);
 
 			}else{
 				painter->GtDrawBevelFrameSunken(m_rectCombo,2);
+				painter->Set_objPen(GtPen(GtColor(0,0,0)));
 				painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
 				painter->GtDrawTriangleDown(m_rectCombo,5);
 			}
