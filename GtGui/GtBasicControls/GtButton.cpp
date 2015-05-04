@@ -142,9 +142,9 @@ namespace GT
 			//draw beveling
 			if(m_blnButtonUp)
 			{
-				painter->GtDrawBevelFrameRaised(outRect,4);
+				painter->GtDrawBevelFrameRaised(outRect,2);
 			}else{
-				painter->GtDrawBevelFrameSunken(outRect,4);
+				painter->GtDrawBevelFrameSunken(outRect,2);
 			}
 
 			int i, numLines;

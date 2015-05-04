@@ -146,12 +146,14 @@ namespace GT
 				m_rectTop.xMax = m_rectTop.xMin + 25; 
 				m_rectTop.yMax = m_rectTop.yMin + (long)((double)m_objFrame.Height() / 2.0f);			
 				painter->GtDrawRect(m_rectTop);
+				painter->GtDrawBevelFrameRaised(m_rectTop,2);
 
 				m_rectBottom = m_objFrame;
 				m_rectBottom.xMax = m_rectBottom.xMin + 25; 
 				m_rectBottom.yMin = m_rectBottom.yMin + (long)((double)m_objFrame.Height() / 2.0f);
 				painter->GtDrawRect(m_rectBottom);
-				
+				painter->GtDrawBevelFrameRaised(m_rectBottom,2);
+
 				painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
 				painter->GtDrawTriangleUp(m_rectTop,5);
 				painter->GtDrawTriangleDown(m_rectBottom,5);
@@ -161,24 +163,27 @@ namespace GT
 				//render normal
 				//render compact mode
 				//draw buttons
-				painter->Set_objBrush(GtBrush(GtColor(150,150,150)));
-				m_rectTop = m_objFrame;
-				m_rectTop.xMax = m_rectTop.xMin + 25; 
-				m_rectTop.yMax = m_rectTop.yMin + 25;			
-				painter->GtDrawRect(m_rectTop);
-
-				m_rectBottom = m_objFrame;
-				m_rectBottom.xMax = m_rectBottom.xMin + 25; 
-				m_rectBottom.yMin = m_rectBottom.yMax - 25;
-				painter->GtDrawRect(m_rectBottom);
-				
 				painter->Set_objBrush(GtBrush(GtColor(200,200,200)));
 				m_rectBar = m_objFrame;
 				m_rectBar.xMax = m_rectBar.xMin + 25; 
 				m_rectBar.yMin = m_rectTop.yMax;
 				m_rectBar.yMax = m_rectBottom.yMin;
 				painter->GtDrawRect(m_rectBar);
+								
+				painter->Set_objBrush(GtBrush(GtColor(150,150,150)));
+				m_rectTop = m_objFrame;
+				m_rectTop.xMax = m_rectTop.xMin + 25; 
+				m_rectTop.yMax = m_rectTop.yMin + 25;			
+				painter->GtDrawRect(m_rectTop);
+				painter->GtDrawBevelFrameRaised(m_rectTop,2);
 
+				m_rectBottom = m_objFrame;
+				m_rectBottom.xMax = m_rectBottom.xMin + 25; 
+				m_rectBottom.yMin = m_rectBottom.yMax - 25;
+				painter->GtDrawRect(m_rectBottom);
+				painter->GtDrawBevelFrameRaised(m_rectBottom,2);
+
+				painter->Set_objPen(GtPen(GtColor(50,50,50)));
 				painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
 				painter->GtDrawTriangleUp(m_rectTop,5);
 				painter->GtDrawTriangleDown(m_rectBottom,5);

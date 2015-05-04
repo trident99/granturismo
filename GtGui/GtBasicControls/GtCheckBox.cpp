@@ -93,7 +93,7 @@ namespace GT
 			m_rectCheck.yMax =m_rectCheck.yMin + 25;
 			//draw the check box
 			painter->GtDrawRect(m_rectCheck);
-			painter->GtDrawBevelFrameSunken(m_rectCheck,4);
+			painter->GtDrawBevelFrameSunken(m_rectCheck,2);
 			//if the box is checked draw the check
 			if(m_blnChecked)
 			{

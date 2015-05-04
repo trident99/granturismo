@@ -402,11 +402,12 @@ namespace GT
 				//draw triangles SIDEWAYS
 				GtPoint3DI pos;
 				GtPolylineI tri;
-
+				painter->GtDrawBevelFrameRaised(m_rectCombo,2);
 				painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
 				painter->GtDrawTriangleRight(m_rectCombo,5);
 
 			}else{
+				painter->GtDrawBevelFrameSunken(m_rectCombo,2);
 				painter->Set_objBrush(GtBrush(GtColor(0,0,0)));
 				painter->GtDrawTriangleDown(m_rectCombo,5);
 			}
